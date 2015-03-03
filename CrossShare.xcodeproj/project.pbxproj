@@ -10,6 +10,7 @@
 		A57385341AA536400026F4B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A57385331AA536400026F4B8 /* AppDelegate.m */; };
 		A57385361AA536400026F4B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A57385351AA536400026F4B8 /* main.m */; };
 		A57385471AA536400026F4B8 /* CrossShareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A57385461AA536400026F4B8 /* CrossShareTests.m */; };
+		A57385511AA5599A0026F4B8 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A57385501AA5599A0026F4B8 /* AppKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		A57385401AA536400026F4B8 /* CrossShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrossShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A57385451AA536400026F4B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A57385461AA536400026F4B8 /* CrossShareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrossShareTests.m; sourceTree = "<group>"; };
+		A57385501AA5599A0026F4B8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A57385511AA5599A0026F4B8 /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +85,7 @@
 		A57385301AA536400026F4B8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A57385501AA5599A0026F4B8 /* AppKit.framework */,
 				A57385311AA536400026F4B8 /* Info.plist */,
 				A57385351AA536400026F4B8 /* main.m */,
 			);
