@@ -1,0 +1,30 @@
+{
+	"name": "Cross Share AirDrop",
+	"short_name" : "AirDrop",
+	"description" : "Share link",
+
+	"permissions" : [
+		"contextMenus",
+		"http://*/*",
+		"https://*/*",
+		"tabs"
+	],
+	
+	"background": { "scripts": [ "background.js" ] },
+	
+	"icons" : {
+		"112" : "icon-112.png",
+		"128" : "icon-128.png",
+		"16" : "icon-16.png",
+		"48" : "icon-48.png",
+		"96" : "icon-96.png"
+	},
+
+	"page_action" : {
+		"default_icon" : "icon-19.png",
+		"default_title" : "AirDrop"
+	},
+
+	"version" : "1.0",
+	"manifest_version" : 2
+}
