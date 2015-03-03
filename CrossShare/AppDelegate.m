@@ -47,7 +47,7 @@ NSString * const ApplicationOpenURLKey = @"ApplicationOpenURLKey";
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSMutableDictionary *values = [NSMutableDictionary dictionary];
     
-    NSArray *keys = @[ @"type", @"text", @"url" ];
+    NSArray *keys = @[ @"type", @"text", @"url", @"image" ];
     NSDictionary *services = @{
                                @"airdrop": NSSharingServiceNameSendViaAirDrop,
                                @"email": NSSharingServiceNameComposeEmail,
@@ -81,6 +81,7 @@ NSString * const ApplicationOpenURLKey = @"ApplicationOpenURLKey";
     [values removeObjectForKey:@"type"];
     
     if (values[@"url"] != nil) values[@"url"] = [NSURL URLWithString:values[@"url"]];
+    if (values[@"image"] != nil) values[@"image"] = [NSURL fileURLWithPath:values[@"image"]];
     
     [values enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
         [param[@"values"] addObject:obj];
@@ -95,8 +96,14 @@ NSString * const ApplicationOpenURLKey = @"ApplicationOpenURLKey";
     
     NSSharingService *sharingService = [NSSharingService sharingServiceNamed:param[@"service"]];
     sharingService.delegate = self;
-    [sharingService performWithItems:param[@"values"]];
-    shareCount++;
+    
+    NSArray *items = param[@"values"];
+    if ([sharingService canPerformWithItems:items]) {
+        [sharingService performWithItems:items];
+        shareCount++;
+    } else {
+        [self clearExit];
+    }
 }
 
 #pragma mark - NSSharingServiceDelegate
