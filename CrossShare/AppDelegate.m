@@ -8,19 +8,31 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
-
-@property (weak) IBOutlet NSWindow *window;
-@end
-
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+#pragma mark Entry
+- (void)applicationWillFinishLaunching:(NSNotification *)notification {
+    [[NSAppleEventManager sharedAppleEventManager] setEventHandler:self
+                                                       andSelector:@selector(handleEvent:withReplyEvent:)
+                                                     forEventClass:kInternetEventClass
+                                                        andEventID:kAEGetURL];
+}
+- (void)handleEvent:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)replyEvent {
+    NSURL *url = [NSURL URLWithString:[[event paramDescriptorForKeyword:keyDirectObject] stringValue]];
+    NSLog(@"%@", url);
+    
+    exit(0);
 }
 
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
+- (void)applicationDidFinishLaunching:(NSNotification *)notification {
+    if ([((NSNumber *)[notification userInfo][NSApplicationLaunchIsDefaultLaunchKey]) boolValue] == NO) return;
+    
+    NSLog(@"Command Line");
+    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] dictionaryRepresentation]);
+    
+    exit(0);
 }
+
+#pragma mark -
 
 @end
