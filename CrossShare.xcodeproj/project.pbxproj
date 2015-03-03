@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A57385341AA536400026F4B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A57385331AA536400026F4B8 /* AppDelegate.m */; };
+		A57385361AA536400026F4B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A57385351AA536400026F4B8 /* main.m */; };
+		A57385381AA536400026F4B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A57385371AA536400026F4B8 /* Images.xcassets */; };
+		A573853B1AA536400026F4B8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A57385391AA536400026F4B8 /* MainMenu.xib */; };
+		A57385471AA536400026F4B8 /* CrossShareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A57385461AA536400026F4B8 /* CrossShareTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A57385411AA536400026F4B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A57385251AA536400026F4B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A573852C1AA536400026F4B8;
+			remoteInfo = CrossShare;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A573852D1AA536400026F4B8 /* CrossShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrossShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57385311AA536400026F4B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A57385321AA536400026F4B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A57385331AA536400026F4B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A57385351AA536400026F4B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A57385371AA536400026F4B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A573853A1AA536400026F4B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A57385401AA536400026F4B8 /* CrossShareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrossShareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57385451AA536400026F4B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A57385461AA536400026F4B8 /* CrossShareTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrossShareTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A573852A1AA536400026F4B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A573853D1AA536400026F4B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A57385241AA536400026F4B8 = {
+			isa = PBXGroup;
+			children = (
+				A573852F1AA536400026F4B8 /* CrossShare */,
+				A57385431AA536400026F4B8 /* CrossShareTests */,
+				A573852E1AA536400026F4B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A573852E1AA536400026F4B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A573852D1AA536400026F4B8 /* CrossShare.app */,
+				A57385401AA536400026F4B8 /* CrossShareTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A573852F1AA536400026F4B8 /* CrossShare */ = {
+			isa = PBXGroup;
+			children = (
+				A57385321AA536400026F4B8 /* AppDelegate.h */,
+				A57385331AA536400026F4B8 /* AppDelegate.m */,
+				A57385371AA536400026F4B8 /* Images.xcassets */,
+				A57385391AA536400026F4B8 /* MainMenu.xib */,
+				A57385301AA536400026F4B8 /* Supporting Files */,
+			);
+			path = CrossShare;
+			sourceTree = "<group>";
+		};
+		A57385301AA536400026F4B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A57385311AA536400026F4B8 /* Info.plist */,
+				A57385351AA536400026F4B8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A57385431AA536400026F4B8 /* CrossShareTests */ = {
+			isa = PBXGroup;
+			children = (
+				A57385461AA536400026F4B8 /* CrossShareTests.m */,
+				A57385441AA536400026F4B8 /* Supporting Files */,
+			);
+			path = CrossShareTests;
+			sourceTree = "<group>";
+		};
+		A57385441AA536400026F4B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A57385451AA536400026F4B8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A573852C1AA536400026F4B8 /* CrossShare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A573854A1AA536400026F4B8 /* Build configuration list for PBXNativeTarget "CrossShare" */;
+			buildPhases = (
+				A57385291AA536400026F4B8 /* Sources */,
+				A573852A1AA536400026F4B8 /* Frameworks */,
+				A573852B1AA536400026F4B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrossShare;
+			productName = CrossShare;
+			productReference = A573852D1AA536400026F4B8 /* CrossShare.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A573853F1AA536400026F4B8 /* CrossShareTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A573854D1AA536400026F4B8 /* Build configuration list for PBXNativeTarget "CrossShareTests" */;
+			buildPhases = (
+				A573853C1AA536400026F4B8 /* Sources */,
+				A573853D1AA536400026F4B8 /* Frameworks */,
+				A573853E1AA536400026F4B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A57385421AA536400026F4B8 /* PBXTargetDependency */,
+			);
+			name = CrossShareTests;
+			productName = CrossShareTests;
+			productReference = A57385401AA536400026F4B8 /* CrossShareTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A57385251AA536400026F4B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = mtjddnr;
+				TargetAttributes = {
+					A573852C1AA536400026F4B8 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					A573853F1AA536400026F4B8 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = A573852C1AA536400026F4B8;
+					};
+				};
+			};
+			buildConfigurationList = A57385281AA536400026F4B8 /* Build configuration list for PBXProject "CrossShare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A57385241AA536400026F4B8;
+			productRefGroup = A573852E1AA536400026F4B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A573852C1AA536400026F4B8 /* CrossShare */,
+				A573853F1AA536400026F4B8 /* CrossShareTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A573852B1AA536400026F4B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57385381AA536400026F4B8 /* Images.xcassets in Resources */,
+				A573853B1AA536400026F4B8 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A573853E1AA536400026F4B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A57385291AA536400026F4B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57385361AA536400026F4B8 /* main.m in Sources */,
+				A57385341AA536400026F4B8 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A573853C1AA536400026F4B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57385471AA536400026F4B8 /* CrossShareTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A57385421AA536400026F4B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A573852C1AA536400026F4B8 /* CrossShare */;
+			targetProxy = A57385411AA536400026F4B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A57385391AA536400026F4B8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A573853A1AA536400026F4B8 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A57385481AA536400026F4B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A57385491AA536400026F4B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A573854B1AA536400026F4B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CrossShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A573854C1AA536400026F4B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CrossShare/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A573854E1AA536400026F4B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CrossShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrossShare.app/Contents/MacOS/CrossShare";
+			};
+			name = Debug;
+		};
+		A573854F1AA536400026F4B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CrossShareTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrossShare.app/Contents/MacOS/CrossShare";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A57385281AA536400026F4B8 /* Build configuration list for PBXProject "CrossShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A57385481AA536400026F4B8 /* Debug */,
+				A57385491AA536400026F4B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A573854A1AA536400026F4B8 /* Build configuration list for PBXNativeTarget "CrossShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A573854B1AA536400026F4B8 /* Debug */,
+				A573854C1AA536400026F4B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A573854D1AA536400026F4B8 /* Build configuration list for PBXNativeTarget "CrossShareTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A573854E1AA536400026F4B8 /* Debug */,
+				A573854F1AA536400026F4B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A57385251AA536400026F4B8 /* Project object */;
+}
